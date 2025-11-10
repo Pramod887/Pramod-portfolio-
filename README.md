@@ -1,23 +1,53 @@
-# 💻 Pramod Kumar  M— Portfolio Website
-Welcome to my personal portfolio website built with **React.js**, **Framer Motion**, and **modern UI design** principles.
-It showcases my work, projects, skills, and journey as a developer passionate about **AI, ML, and Web Technologies**.
+# 💻 Pramod Kumar M — Portfolio Website
 
-🌐 **Website:** [[kunj-Portfolio]](https://kunj-desai.netlify.app/)
+Welcome to my personal **portfolio website** built with **React.js**, **Framer Motion**, and **modern UI/UX design** principles.  
+It showcases my **projects, skills, and journey** as an aspiring **MCA student and Android developer** passionate about **AI, ML, and mobile app development**.
 
-🖼️ **Screenshots**
-<img width="1902" height="994" alt="Screenshot 2025-11-03 232447" src="https://github.com/user-attachments/assets/6f78ceb0-363c-41e8-9eb9-a26fa814e8ac" />
-<img width="1894" height="992" alt="image" src="https://github.com/user-attachments/assets/8a6eeff0-3ebc-446c-a1ac-5f1a02279ac8" />
-<img width="1903" height="1044" alt="Screenshot 2025-11-04 153204" src="https://github.com/user-attachments/assets/355b1c4c-83e6-4465-9081-bff34bb3ad3b" />
+---
+
+## 🌐 Live Website
+👉 **[Pramod Portfolio (Coming Soon)](https://pramod887.github.io/)**
+
+---
+
+## 🧠 About This Project
+
+This portfolio serves as a reflection of my journey in the tech world —  
+from learning programming languages like **Java**, **C++**, and **Kotlin**,  
+to building **AI-powered** and **Android** applications.  
+
+It’s designed with a sleek **dark UI**, responsive layouts, and smooth animations using **Framer Motion**.
+
+---
+
+## 🖼️ Screenshots
+
+Here’s a quick look at the website layout and UI design 👇
+
+<div align="center">
+
+<img src="./public/git1 (1).png" alt="Home Page Screenshot" width="800"/>
+<br/><br/>
+
+<img src="./public/git1 (2).png" alt="Projects Section Screenshot" width="800"/>
+<br/><br/>
+
+<img src="./public/git1 (3).png" alt="Gallery Section Screenshot" width="800"/>
+<br/><br/>
+
+<img src="./public/git1 (4).png" alt="Contact Section Screenshot" width="800"/>
+
+</div>
+
 ---
 
 ## 🚀 Features
 
-* 🎨 **Modern UI/UX** with black-based aesthetic theme
-* ⚡ Smooth **Framer Motion** animations
-* 💼 **Projects, Resume, and Contact sections**
-* 🧠 Tech-focused portfolio highlighting AI/ML projects
-* 📨 Functional contact form powered by **EmailJS**
-* 🧩 Responsive design for all screen sizes
+✅ **Modern Dark Theme** with a clean, professional layout  
+✅ **Framer Motion Animations** for smooth transitions  
+✅ **WhatsApp-integrated Contact Form**  
+✅ **Responsive Design** — works perfectly on all devices  
+✅ **Projects and Gallery Sections** showcasing real development work  
 
 ---
 
@@ -28,9 +58,9 @@ It showcases my work, projects, skills, and journey as a developer passionate ab
 | **Frontend**        | React.js, HTML5, CSS3, JavaScript (ES6+) |
 | **Styling**         | Tailwind CSS / Custom CSS                |
 | **Animation**       | Framer Motion                            |
-| **Contact Form**    | EmailJS                                  |
+| **Backend / API**   | Firebase, EmailJS                        |
 | **Version Control** | Git & GitHub                             |
-| **Deployment**      | Vercel / Netlify                         |
+| **Deployment**      | GitHub Pages / Vercel                    |
 
 ---
 
@@ -40,17 +70,17 @@ To run this project locally:
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/kunj2803/kunjdesai-portfolio.git
+git clone https://github.com/Pramod887/Pramod-portfolio-.git
 
-# 2️⃣ Navigate to project directory
-cd kunjdesai-portfolio
+# 2️⃣ Navigate to the project folder
+cd Pramod-portfolio-
 
 # 3️⃣ Install dependencies
 npm install
 
-# 4️⃣ Run development server
-npm start or npm run dev
-```
+# 4️⃣ Run the development server
+npm run dev
+
 
 Now open [http://localhost:3000](http://localhost:3000) in your browser 🚀
 
@@ -60,8 +90,8 @@ Now open [http://localhost:3000](http://localhost:3000) in your browser 🚀
 
 If you’d like to collaborate or just say hi 👋, feel free to reach out!
 
-* 📧 **Email:** [kunjd2803@gmail.com](mailto:kunjd2803@gmail.com)
-* 💼 **LinkedIn:** [linkedin.com/in/kunj-desai-07717b293](https://www.linkedin.com/in/kunj-desai-07717b293/)
+* 📧 **Email:** [kunjd2803@gmail.com](mailto:pr75090@gmail.com)
+* 💼 **LinkedIn:** [linkedin.com/in/kunj-desai-07717b293](www.linkedin.com/in/pramod-kumar-m-b8a1a4343)
 
 ---
 
