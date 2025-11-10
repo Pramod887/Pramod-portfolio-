@@ -24,21 +24,10 @@ It’s designed with a sleek **dark UI**, responsive layouts, and smooth animati
 
 Here’s a quick look at the website layout and UI design 👇
 
-<div align="center">
-
-<img src="./public/git1 (1).png" alt="Home Page Screenshot" width="800"/>
-<br/><br/>
-
-<img src="./public/git1 (2).png" alt="Projects Section Screenshot" width="800"/>
-<br/><br/>
-
-<img src="./public/git1 (3).png" alt="Gallery Section Screenshot" width="800"/>
-<br/><br/>
-
-<img src="./public/git1 (4).png" alt="Contact Section Screenshot" width="800"/>
-
-</div>
-
+<img width="1889" height="860" alt="Image" src="https://github.com/user-attachments/assets/4359001c-9874-4b28-92a6-b45518926bbe" />
+<img width="1874" height="863" alt="Image" src="https://github.com/user-attachments/assets/6243a3a9-c3c6-4340-9bc6-e85960c3854b" />
+<img width="1891" height="856" alt="Image" src="https://github.com/user-attachments/assets/833ab659-5c1b-4029-9d52-35344f18cb7a" />
+<img width="1885" height="852" alt="Image" src="https://github.com/user-attachments/assets/b8b4d85a-a8a8-4985-80b3-42281aeedb0c" />
 ---
 
 ## 🚀 Features
