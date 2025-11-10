@@ -1,0 +1,150 @@
+/* 🎨 Gallery Container */
+.gallery-container {
+  background: #0b0b0b;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 📸 Title */
+.gallery-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* 🖼️ Gallery Grid */
+.post-feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+/* 🧱 Image Card */
+.post-card {
+  background: #121212;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+}
+
+/* 📝 Caption */
+.caption {
+  font-size: 0.95rem;
+  color: #bbb;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* 🧩 Photo Grid */
+.photo-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* 🖼️ Image Styling */
+.photo-item img {
+  width: 100%;
+  height: auto; /* ✅ Keeps original aspect ratio */
+  object-fit: contain; /* ✅ Prevents cropping */
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-item:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+/* 🔍 Zoom Overlay */
+.zoom-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  backdrop-filter: blur(6px);
+}
+
+/* 🖼️ Zoomed Image */
+.zoom-img {
+  max-width: 95%;
+  max-height: 85vh;
+  border-radius: 14px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  object-fit: contain;
+}
+
+/* 🔘 Navigation Buttons */
+.nav-btn,
+.close-btn {
+  position: absolute;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.nav-btn:hover,
+.close-btn:hover {
+  opacity: 1;
+}
+
+.nav-btn.left {
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-btn.right {
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ❌ Close Button */
+.close-btn {
+  top: 8%;
+  right: 6%;
+  font-size: 24px;
+}
+
+/* 📱 Responsive Fixes */
+@media (max-width: 768px) {
+  .gallery-title {
+    font-size: 1.5rem;
+  }
+
+  .post-feed {
+    gap: 18px;
+  }
+
+  .photo-item img {
+    border-radius: 10px;
+  }
+}
