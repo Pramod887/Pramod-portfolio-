@@ -90,8 +90,8 @@ Now open [http://localhost:3000](http://localhost:3000) in your browser 🚀
 
 If you’d like to collaborate or just say hi 👋, feel free to reach out!
 
-* 📧 **Email:** [kunjd2803@gmail.com](mailto:pr75090@gmail.com)
-* 💼 **LinkedIn:** [linkedin.com/in/kunj-desai-07717b293](www.linkedin.com/in/pramod-kumar-m-b8a1a4343)
+* 📧 **Email:** (mailto:pr75090@gmail.com)
+* 💼 **LinkedIn:**(www.linkedin.com/in/pramod-kumar-m-b8a1a4343)
 
 ---
 
