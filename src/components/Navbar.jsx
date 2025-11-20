@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -15,82 +15,74 @@ const links = [
 ];
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const closeMenuOnResize = () => {
+      if (window.innerWidth > 900 && isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", closeMenuOnResize);
+    return () => window.removeEventListener("resize", closeMenuOnResize);
+  }, [isMenuOpen]);
+
+  const handleLinkClick = () => {
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
-    <nav
-      className="nav"
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "0.8rem 2rem",
-        borderBottom: "1px solid rgba(255,255,255,0.1)",
-        background: "rgba(0,0,0,0.6)",
-        backdropFilter: "blur(10px)",
-      }}
-    >
-      {/* --- Left Logo + Name --- */}
-      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+    <nav className={`nav ${isMenuOpen ? "nav-open" : ""}`}>
+      <div className="brand">
         <motion.div
           className="logo"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ type: "spring", stiffness: 200 }}
-          style={{
-            fontWeight: "bold",
-            fontSize: "1.4rem",
-            color: "var(--accent)",
-          }}
         >
           PK
         </motion.div>
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <h1 style={{ margin: 0, fontSize: 14 }}>Pramod Kumar M</h1>
-          <div style={{ fontSize: 12, color: "var(--muted)" }}>
-            Java • Andriod • Developer
-          </div>
+        <div className="brand-copy">
+          <h1>Pramod Kumar M</h1>
+          <span>Java • Android • Developer</span>
         </div>
       </div>
 
-      {/* --- Center Navigation Links --- */}
-      <div
-        className="nav-links"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "1.8rem",
-          alignItems: "center",
-          flexGrow: 1,
-        }}
+      <button
+        className="nav-toggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded={isMenuOpen}
+        onClick={() => setIsMenuOpen((prev) => !prev)}
       >
-        {links.map((l) => (
+        <span />
+        <span />
+        <span />
+      </button>
+
+      <div className={`nav-links ${isMenuOpen ? "is-open" : ""}`}>
+        {links.map((link) => (
           <NavLink
-            key={l.to}
-            to={l.to}
+            key={link.to}
+            to={link.to}
             end
+            onClick={handleLinkClick}
             className={({ isActive }) =>
-              isActive ? "active-link" : "inactive-link"
+              `nav-link ${isActive ? "active-link" : "inactive-link"}`
             }
-            style={{
-              position: "relative",
-              fontSize: "0.95rem",
-              textDecoration: "none",
-              color: "white",
-              fontWeight: 500,
-            }}
           >
             {({ isActive }) => (
               <motion.div
                 whileHover={{
-                  scale: 1.1,
+                  scale: 1.05,
                   color: "var(--accent)",
                   textShadow: "0 0 8px var(--accent)",
                 }}
                 transition={{ duration: 0.3 }}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                }}
+                className="nav-link-inner"
               >
                 <motion.span
                   animate={{
@@ -98,7 +90,7 @@ export default function Navbar() {
                   }}
                   transition={{ duration: 0.3 }}
                 >
-                  {l.label}
+                  {link.label}
                 </motion.span>
                 {isActive && (
                   <motion.div
@@ -107,14 +99,6 @@ export default function Navbar() {
                     initial={{ opacity: 0, y: 5 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
-                    style={{
-                      width: "70%",
-                      height: "2px",
-                      marginTop: "4px",
-                      borderRadius: "1px",
-                      backgroundColor: "var(--accent)",
-                      boxShadow: "0 0 6px var(--accent)",
-                    }}
                   />
                 )}
               </motion.div>
