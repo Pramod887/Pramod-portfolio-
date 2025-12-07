@@ -30,10 +30,26 @@ const PROJECTS = [
   {
     title: '💼 Portfolio Website',
     desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
-    ss: '/portfolio.jpg',
+    ss: '/ProfileX.png',
     tech: ['React', 'Framer Motion', 'Tailwind CSS'],
     live: '#',
     code: ''
+  },
+  {
+    title: '📄 Resume Builder',
+    desc: 'An intelligent resume builder powered by Python Flask that allows users to input their personal details, education, experience, and skills. The system automatically generates a professional, well-formatted resume in PDF format. This tool saves time and ensures a polished presentation for job applications.',
+    ss: '/gallery/project5.svg',
+    tech: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'PDF Generation'],
+    live: '#',
+    code: 'https://github.com/Pramod887'
+  },
+  {
+    title: '👟 Nike Shoes Showcase',
+    desc: 'A sleek and modern Nike shoes showcase website featuring the latest shoe models with interactive UI. Users can browse through new collections, view detailed shoe information, and click on any shoe to be redirected to the official Nike website for purchase. The platform offers a smooth shopping experience with modern design aesthetics.',
+    ss: '/gallery/project6.svg',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    live: '#',
+    code: 'https://github.com/Pramod887'
   },
 ]
 
