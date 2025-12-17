@@ -32,24 +32,41 @@ const PROJECTS = [
     desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
     ss: '/ProfileX.png',
     tech: ['React', 'Framer Motion', 'Tailwind CSS'],
-    live: '#',
+    live: 'https://pramod887.github.io/',
     code: ''
   },
   {
     title: '📄 Resume Builder',
     desc: 'An intelligent resume builder powered by Python Flask that allows users to input their personal details, education, experience, and skills. The system automatically generates a professional, well-formatted resume in PDF format. This tool saves time and ensures a polished presentation for job applications.',
-    ss: '/gallery/project5.svg',
+    ss: '/ai.webp',
     tech: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'PDF Generation'],
     live: '#',
     code: 'https://github.com/Pramod887'
   },
+  
   {
-    title: '👟 Nike Shoes Showcase',
-    desc: 'A sleek and modern Nike shoes showcase website featuring the latest shoe models with interactive UI. Users can browse through new collections, view detailed shoe information, and click on any shoe to be redirected to the official Nike website for purchase. The platform offers a smooth shopping experience with modern design aesthetics.',
-    ss: '/gallery/project6.svg',
-    tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    title: '👟 Nike Shoes Collection',
+    desc: 'A modern Nike shoes landing page built with HTML, CSS, and JavaScript, showcasing premium shoes with direct links to purchase on the official Nike site.',
+    ss: '/gallery/project7.svg',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    live: 'https://nike-shoesm.netlify.app/',
+    code: 'https://github.com/Pramod887/Shoes-website-.git'
+  },
+  {
+    title: '🍬 Sweet Shop Management System',
+    desc: 'Full-stack FastAPI + React app for managing sweet shop operations with JWT auth, inventory handling, role-based access, and purchase/restock workflows.',
+    ss: '/Docuchat.png',
+    tech: ['FastAPI', 'React', 'Vite', 'SQLAlchemy', 'SQLite', 'JWT'],
     live: '#',
-    code: 'https://github.com/Pramod887'
+    code: 'https://github.com/Pramod887/sweet-shop-management-system.git'
+  },
+  {
+    title: '📦 Commodities Management System',
+    desc: 'Frontend-only React + Vite app with mocked role-based auth, protected routes, manager dashboard, product CRUD, and light/dark mode using local state.',
+    ss: '/gallery/project4.svg',
+    tech: ['React', 'Vite', 'CSS'],
+    live: 'https://commodities-management.netlify.app/',
+    code: 'https://github.com/Pramod887/Commodities-Management.git'
   },
 ]
 

@@ -5,18 +5,18 @@ import "./Gallery.css";
 
 // 🖼️ Image List (12 images)
 const IMAGES = [
-  { id: 1, caption: "Exploring creativity through code 💻", photos: ["/gallery/1.jpg"] },
-  { id: 2, caption: "Turning ideas into apps 🚀", photos: ["/gallery/2.jpg"] },
-  { id: 3, caption: "Design meets technology 🎨", photos: ["/gallery/3.jpg"] },
-  { id: 4, caption: "Creating modern digital experiences ✨", photos: ["/gallery/4.jpg"] },
-  { id: 5, caption: "Learning, building, growing 🌱", photos: ["/gallery/5.jpg"] },
-  { id: 6, caption: "Every project starts with passion ❤️", photos: ["/gallery/6.jpg"] },
-  { id: 7, caption: "Chasing perfection through creativity 🌈", photos: ["/gallery/7.jpg"] },
-  { id: 8, caption: "Innovation begins with imagination 💡", photos: ["/gallery/8.jpg"] },
-  { id: 9, caption: "Moments of focus and flow 🎯", photos: ["/gallery/9.jpg"] },
-  { id: 10, caption: "Capturing the developer journey 📸", photos: ["/gallery/10.jpg"] },
-  { id: 11, caption: "Blending art and technology together 🧠", photos: ["/gallery/11.jpg"] },
-  { id: 12, caption: "The future is built, not predicted ⚡", photos: ["/gallery/12.jpg"] },
+  { id: 1, caption: "College day fit — Baxxer tee and campus vibes", photos: ["/gallery/1.jpg"] },
+  { id: 2, caption: "Coffee stop between lectures", photos: ["/gallery/2.jpg"] },
+  { id: 3, caption: "Travel day — packed bags and new places", photos: ["/gallery/3.jpg"] },
+  { id: 4, caption: "Beach walk at sunset", photos: ["/gallery/4.jpg"] },
+  { id: 5, caption: "Cafe corner, laptop open, code and caffeine", photos: ["/gallery/5.jpg"] },
+  { id: 6, caption: "City stroll — street lights and sneakers", photos: ["/gallery/6.jpg"] },
+  { id: 7, caption: "Mountain lookout — fresh air reset", photos: ["/gallery/7.jpg"] },
+  { id: 8, caption: "Night drive playlist on repeat", photos: ["/gallery/8.jpg"] },
+  { id: 9, caption: "Library grind — notes, books, and focus", photos: ["/gallery/9.jpg"] },
+  { id: 10, caption: "Friends meetup — laughs and snapshots", photos: ["/gallery/10.jpg"] },
+  { id: 11, caption: "Campus corridor — heading to class", photos: ["/gallery/11.jpg"] },
+  { id: 12, caption: "Weekend escape — trains, tracks, and travel plans", photos: ["/gallery/12.jpg"] },
 ];
 
 // ✨ Animation Variants
@@ -85,7 +85,6 @@ export default function Gallery() {
             variants={childVariants}
             whileHover={{ y: -4 }}
           >
-            <p className="caption">{post.caption}</p>
             <div className="photo-grid single">
               {post.photos.map((src, i) => (
                 <motion.div
