@@ -81,7 +81,7 @@ export default function Home() {
           </h1>
 
           <p className="typing-effect home-subheading">
-            Java Developer | Frontend Developer | Tech Explorer
+            Java Developer | Frontend Developer | Vibe coder
           </p>
 
           <motion.div

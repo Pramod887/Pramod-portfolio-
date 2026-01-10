@@ -5,18 +5,20 @@ import { motion, AnimatePresence } from "framer-motion";
 const CERTS = {
   tech: [
     {
-      title: "ETHICAL HACKING",
-      org: "VTU university",
-      date: "2022",
-      img: "/certs/Screenshot 2025-11-09 150627.png",
-      link: "/certs/Screenshot 2025-11-09 150627.png",
+      title: "Buidl a responsive real word web page with HTML and CSS",
+      org: "udemy",
+      date: "jan-2026",
+      img: "/certs/UC-9d3b38a8-d90f-45f5-8414-bc662e655c03.jpg",
+      link: "/certs/UC-9d3b38a8-d90f-45f5-8414-bc662e655c03.jpg",
+
     },
     {
-      title: "PRIVACY AND SECURITY IN SOCIAL MEDIA",
-      org: "VTU university",
-      date: "2022",
-      img: "/certs/Screenshot 2025-11-09 150650.png",
-      link: "/certs/Screenshot 2025-11-09 150650.png",
+      title: "Prompt engineering for ai bootcamp",
+      org: "udemy",
+      date: "dec-2025",
+      img: "/certs/ai cir.jpeg",
+      link: "/certs/ai cir.jpeg",
+
     },
   ],
   
