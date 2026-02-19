@@ -1,38 +1,63 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Home from './pages/Home'
-import Projects from './pages/Projects'
-import Gallery from './pages/Gallery'
-import Certificates from './pages/Certificates'
-import Blog from './pages/Blog'
-import Resume from './pages/Resume'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import NotFound from './pages/NotFound'
-import SkillNetwork from './pages/Skills'  
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Gallery from './pages/Gallery';
+import Certificates from './pages/Certificates';
+import Blog from './pages/Blog';
+import Resume from './pages/Resume';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
+import SkillNetwork from './pages/Skills';
+import SinglePage from './pages/SinglePage';
+import useWindowWidth from './hooks/useWindowWidth';
 
 export default function App() {
+  const width = useWindowWidth();
+  const useSingle = width <= 480;
+  const location = useLocation();
+
+  // when switching into single page layout, or on initial load in that
+  // layout, scroll to the path-derived section if one exists
+  useEffect(() => {
+    if (useSingle) {
+      const path = location.pathname.replace(/^\//, '');
+      if (path) {
+        const el = document.getElementById(path);
+        if (el) {
+          setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100);
+        }
+      }
+    }
+  }, [useSingle, location.pathname]);
+
   return (
     <div className="app">
       <Navbar />
       <main style={{ flex: 1 }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/skills" element={<SkillNetwork />} />
-          <Route path="/certificates" element={<Certificates />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/about" element={<About />} /> {/* ✅ fixed lowercase */}
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        {useSingle ? (
+          <SinglePage />
+        ) : (
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/skills" element={<SkillNetwork />} />
+            <Route path="/certificates" element={<Certificates />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/about" element={<About />} />{' '}
+            {/* ✅ fixed lowercase */}
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        )}
       </main>
       <footer className="footer">
         © {new Date().getFullYear()} Pramod Kumar M — Built with React
       </footer>
     </div>
-  )
+  );
 }
